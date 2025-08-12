@@ -800,18 +800,12 @@ run;
 data MSE2;
    set MSE1;
    rho_cheang=rho_unc*((&t-2)/(&t-4));
-   rho_kang=rho_unc*(&t/(&t-2));
 
    rho_se_cheang = rho_se *((&t-2)/(&t-4));
-   rho_se_kang= rho_se *(&t/(&t-2));
 
    if rho_cheang < -1 then rho_cheang_adj = -1;
    else if rho_cheang > 1 then rho_cheang_adj = 1;
    else rho_cheang_adj = rho_cheang; 
-
-   if rho_kang < -1 then rho_kang_adj = -1;
-   else if rho_kang > 1  then rho_kang_adj = 1;
-   else rho_kang_adj = rho_kang; 
 
    sd_whino_unc = RMSE *sqrt(1-(rho_unc)**2) ;
    sd_whino_cheang = RMSE *sqrt(1-(rho_unc)**2)*sqrt(&t/(&t-1)) ;
@@ -892,3 +886,4 @@ quit;
 quit;
 
 proc printto; run;
+
