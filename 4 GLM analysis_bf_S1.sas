@@ -219,7 +219,7 @@ proc glm data=analysis.relbias_sfactor_bf;
 run;
 
 
-/*Slected comparison: (1) frequentist residual sd, (2) frequentist white noise sd, (3) frequentist corrected white noise sd, (4) Bayesian residual sd_11, (5) Bayesian white noise sd_11*/
+/*Selected comparison: (1) frequentist residual sd, (2) frequentist white noise sd, (3) frequentist corrected white noise sd, (4) Bayesian residual sd_11, (5) Bayesian white noise sd_11*/
 
 proc glm data=analysis.relbias_sfactor_bf;
     where procedure in (1, 2, 3, 4, 5, 6);
@@ -256,7 +256,7 @@ proc glm data=analysis.mse_sfactor_bf;
     model sfactor_median = procedure T gamma100 rho procedure*T procedure*gamma100 procedure*rho T*gamma100 T*rho gamma100*rho / ss3 effectsize;
 run;
 
-/*Slected comparison: (1) frequentist residual sd, (2) frequentist white noise sd, (3) frequentist corrected white noise sd, (4) Bayesian residual sd_11, (5) Bayesian white noise sd_11*/
+/*Selected comparison: (1) frequentist residual sd, (2) frequentist white noise sd, (3) frequentist corrected white noise sd, (4) Bayesian residual sd_11, (5) Bayesian white noise sd_11*/
 
 proc glm data=analysis.mse_sfactor_bf;
     where procedure in (1, 2, 3, 4, 5, 6);
@@ -265,5 +265,6 @@ proc glm data=analysis.mse_sfactor_bf;
 run;
 
 *ods html close;
+
 
 
