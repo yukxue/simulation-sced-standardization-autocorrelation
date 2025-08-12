@@ -11,15 +11,15 @@
 
 "1.1 stat_properties_freq_S1.sas": calculate the statistical properties for REML estimates
 
-"1.2 stat_properties_baye_S1": calculate the statistical properties for Bayesian estimates
+"1.2 stat_properties_baye_S1.sas": calculate the statistical properties for Bayesian estimates
 
-"2.1 add procedure (intervention and autocorrelation)": add the variable "procedure" to the REML estimates
+"2.1 add procedure (intervention and autocorrelation).sas": add the variable "procedure" to the estimates of standardized intervention effect and autocorrelation
 
-"2.2 add procedure (standardization factor)": add the variable "procedure" to the Bayesian estimates
+"2.2 add procedure (standardization factor).sas": add the variable "procedure" to the estimates of standardization factors
 
-"3 merge freq and Baye": merge the estimates of REML and Bayesian methods into one dataset
+"3 merge freq and Baye.sas": merge the estimates of REML and Bayesian methods into one dataset
 
-"4 GLM analysis_bf_S1": run GLM analysis to examine the impacts of design factors/estimation procedures on the statistical properties
+"4 GLM analysis_bf_S1.sas": run GLM analysis to examine the impacts of design factors/estimation procedures on the statistical properties
 
 ## Contact: xyukang@gmail.com (Yukang Xue).
 
