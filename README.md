@@ -21,7 +21,7 @@
 
 "4 GLM analysis_bf_S1": run GLM analysis to examine the impacts of design factors/estimation procedures on the statistical properties
 
-## Contact: xyukang@gmail.com.
+## Contact: xyukang@gmail.com (Yukang Xue).
 
 **References**
 
